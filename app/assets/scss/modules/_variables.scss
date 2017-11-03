@@ -3,7 +3,8 @@
 //----------------------------------*/
 $body-background: #FFFFFF;
 $dark-background: #242324;
-$overlay-light: linear-gradient(to bottom right,#FFFFFF,#242324);
+$overlay-light: linear-gradient(to bottom right,#242324,#FFFFFF);
+$dark-gradient: linear-gradient(135deg, #000000 0%,#4c4c4c 83%,#000000 100%);
 
 //----------------------------------*\
 // Font Colors
@@ -15,12 +16,13 @@ $text-shadow: 0 1px 2px #242324;
 $line-height: 1.2em;
 $letter-spacing: 0.1em;
 $lighter: 100;
-$bold: 300;
+$medium: 100;
+$bold: 400;
 
 //----------------------------------*\
 // Paddings & margins
 //----------------------------------*/
-$hero-padding-mobile: 10em 0 5em 0;
+$hero-padding-mobile: 10em 0 1em 0;
 $hero-padding-table: 15em 0 7.5em 0;
 $hero-padding-desktop: 20em 0 10em 0;
 $hero-padding-desktop-large: 30em 0 10em 0;
@@ -34,3 +36,8 @@ $tablet-small:	480px;
 $tablet-large:	768px;
 $screen-small:	1024px;
 $screen-large:	1680px;
+
+//----------------------------------*\
+// Border
+//----------------------------------*/
+$box-shadow: 4px 7px 14px rgba(50, 50, 50, 0.44);

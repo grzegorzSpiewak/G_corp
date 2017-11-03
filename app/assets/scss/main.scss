@@ -1,7 +1,7 @@
 //----------------------------------*\
 // SCSS MIXINS
 //----------------------------------*/
-
+@import "./modules/_mixins.scss";
 
 //----------------------------------*\
 // CONFIG MODULES
@@ -14,7 +14,8 @@
 // Components
 //----------------------------------*/
 @import "./components/_hamburger.scss";
-@import "./components/_test.scss";
+@import "./components/_header.scss";
+@import "./components/_about.scss";
 
 //----------------------------------*\
 // Css animations

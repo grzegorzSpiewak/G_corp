@@ -1,19 +1,21 @@
-.hero {
-  background-image: url('../img/home.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: inherit;
+.header {
+  @include fixed-background;
+
+  &__home {
+    background-image: url('../images/home.jpg');
+    @extend .header;
+  }
+
+  &__technology {
+    background-image: url('../images/home.jpg');
+    @extend .header;
+  }
 
   &__overlay {
-    height: inherit;
+    @include overlay-light;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $overlay-light;
-    background-attachment: fixed;
-    opacity: 0.6;
 
     &__centered {
       padding: $hero-padding-mobile;
@@ -33,16 +35,17 @@
     }
   }
 
-  &__header {
-    font-weight: $lighter;
-    text-transform: uppercase;
-    text-shadow: $text-shadow;
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
+  &__heading {
+    @include heading;
   }
 
   &__caption {
+    display: none;
+    text-shadow: $text-shadow;
+    @include caption;
 
-
+    @media (min-width: $tablet-small) {
+      display: block;
+    }
   }
 }
