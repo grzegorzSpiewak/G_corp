@@ -1,0 +1,23 @@
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+
+
+//----------------------------------*\
+// CONFIG MODULES
+//----------------------------------*/
+@import "./modules/_normalize.scss";
+@import "./modules/_variables.scss";
+@import "./modules/_tags.scss";
+@import "./modules/_layout.scss";
+//----------------------------------*\
+// Components
+//----------------------------------*/
+@import "./components/_hamburger.scss";
+@import "./components/_test.scss";
+
+//----------------------------------*\
+// Css animations
+//----------------------------------*/
+@import "./animations/_pageTransition.scss";
+@import "./animations/_mauseScroll.scss";

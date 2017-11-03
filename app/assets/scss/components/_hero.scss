@@ -1,0 +1,48 @@
+.hero {
+  background-image: url('../img/home.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: inherit;
+
+  &__overlay {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $overlay-light;
+    background-attachment: fixed;
+    opacity: 0.6;
+
+    &__centered {
+      padding: $hero-padding-mobile;
+      text-align: center;
+
+      @media (min-width: $tablet-small) {
+        padding: $hero-padding-table;
+      }
+
+      @media (min-width: $screen-small) {
+        padding: $hero-padding-desktop;
+      }
+
+      @media (min-width: $screen-large) {
+        padding: $hero-padding-desktop-large;
+      }
+    }
+  }
+
+  &__header {
+    font-weight: $lighter;
+    text-transform: uppercase;
+    text-shadow: $text-shadow;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+  }
+
+  &__caption {
+
+
+  }
+}

@@ -1,0 +1,9 @@
+#outer-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+#page-wrap {
+	max-width: $screen-large;
+  margin: 0 auto;
+}
